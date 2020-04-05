@@ -60,14 +60,30 @@
 			children = (
 				32D9AE21243A1B0500C0D12A /* AppDelegate.swift */,
 				32D9AE23243A1B0500C0D12A /* SceneDelegate.swift */,
-				32D9AE35243A1BC900C0D12A /* PhotosCollectionViewController.swift */,
-				32D9AE37243A1F9200C0D12A /* PhotoCell.swift */,
+				32D9AE39243A2DE500C0D12A /* Controller */,
+				32D9AE3A243A2DF700C0D12A /* View */,
 				32D9AE27243A1B0500C0D12A /* Main.storyboard */,
 				32D9AE2A243A1B0600C0D12A /* Assets.xcassets */,
 				32D9AE2C243A1B0600C0D12A /* LaunchScreen.storyboard */,
 				32D9AE2F243A1B0600C0D12A /* Info.plist */,
 			);
 			path = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		32D9AE39243A2DE500C0D12A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32D9AE35243A1BC900C0D12A /* PhotosCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		32D9AE3A243A2DF700C0D12A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32D9AE37243A1F9200C0D12A /* PhotoCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

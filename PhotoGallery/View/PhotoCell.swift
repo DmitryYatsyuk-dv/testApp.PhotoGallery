@@ -10,4 +10,8 @@ import UIKit
 
 class PhotoCell: UICollectionViewCell {
     
+    //MARK: IBOutlets
+    
+    @IBOutlet weak var artImageView: UIImageView!
+    
 }
