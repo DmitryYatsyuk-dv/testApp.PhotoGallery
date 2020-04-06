@@ -11,9 +11,10 @@ import UIKit
 class PhotosCollectionViewController: UICollectionViewController {
     
     //MARK: Variables
-    let photos = ["photo1", "photo2", "photo4", "photo5",
-                  "photo6", "photo7", "photo9", "photo10",
-                  "photo11", "photo12", "photo13", "photo14", "photo15",
+    
+    let photos = ["photo1", "photo2", "photo14", "photo15",
+                  "photo6", "photo10", "photo9", "photo7",
+                  "photo11", "photo12", "photo13", "photo4", "photo5",
                   "photo16", "photo17"]
     
     let itemsPerRow: CGFloat = 2
@@ -32,6 +33,17 @@ class PhotosCollectionViewController: UICollectionViewController {
         //        layout.minimumLineSpacing = 10
         //        layout.minimumInteritemSpacing = 10
         //        collectionView.showsVerticalScrollIndicator = false
+    }
+    
+    //MARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "showPhotoSegue" {
+            let photoVC = segue.destination as! PhotoViewController
+            let cell = sender as! PhotoCell
+            photoVC.image = cell.artImageView.image
+        }
     }
     
     // MARK: UICollectionViewDataSource
